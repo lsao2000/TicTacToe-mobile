@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue">#050E42</color>
+    <color name="player_name">#939191</color>
+    <color name="background">#09002E</color>
 </resources>
