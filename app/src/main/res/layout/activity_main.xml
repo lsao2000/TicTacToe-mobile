@@ -14,63 +14,70 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+        android:gravity="center"
         >
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="140sp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_gravity="center"
             android:background="@drawable/buttondesign"
-            android:backgroundTint="@color/dark_blue"
             android:padding="10dp">
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"
-                android:layout_marginStart="5dp"
-                android:background="@drawable/x_mark"/>
             <TextView
+                android:id="@+id/playerOne"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Player 1"
-                android:textSize="30sp"
+                android:textSize="16sp"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
+                android:gravity="center"
                 android:fontFamily="@font/baloo"
                 android:textColor="@color/player_name"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/x_mark"
+                android:layout_gravity="center"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:background="@drawable/buttondesign"
-            android:backgroundTint="@color/dark_blue"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="5dp"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="10dp"
             android:layout_marginBottom="10dp"
             android:layout_gravity="center"
             android:padding="10dp">
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/o_mark"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="5dp"/>
             <TextView
+                android:id="@+id/playerTwo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Player 2"
                 android:fontFamily="@font/baloo"
                 android:textColor="@color/player_name"
-                android:textSize="30sp"
+                android:textSize="16sp"
                 android:layout_marginStart="5dp"
+                android:gravity="center"
+                android:layout_marginEnd="5dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/o_mark"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
                 android:layout_marginEnd="5dp"/>
         </LinearLayout>
     </LinearLayout>
