@@ -151,7 +151,11 @@ public class MainActivity extends AppCompatActivity {
         if(playerTurn == 1){
             imageView.setBackgroundResource(R.drawable.x_mark);
             if(checkPlayerWin()){
-
+                WinDialog winDialog = new WinDialog(MainActivity.this, playerOne.getText().toString(), MainActivity.this);
+                winDialog.show();
+            }else if (totalSelectedBox == 9){
+                WinDialog winDialog1 = new WinDialog(MainActivity.this, "No ones win the game",MainActivity.this);
+                winDialog1.show();
             }
         }
     }
